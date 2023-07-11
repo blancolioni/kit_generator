@@ -623,9 +623,11 @@ package body Kit.Generate is
                 (Db, Table, Handles);
          begin
             Project.Add_Package (Table_Handles);
-            Project.Add_Package
-              (Kit.Generate.Selections.Generate_Selection_Package
-                 (Db, Table, Table_Handles));
+            if False then
+               Project.Add_Package
+                 (Kit.Generate.Selections.Generate_Selection_Package
+                    (Db, Table, Table_Handles));
+            end if;
          end;
       end Handle_Interface;
 
