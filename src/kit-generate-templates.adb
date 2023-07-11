@@ -146,8 +146,6 @@ package body Kit.Generate.Templates is
          Copy ("Kit_Locking");
          Copy ("Tables");
          Copy ("Tables.Scanner");
-         Copy ("Tables.SK_Tables");
-         Copy ("SK_Bindings");
 
       end General_Packages;
 
